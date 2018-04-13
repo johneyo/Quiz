@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+ <style> 
+.correct{
+    display: none;    
+    }
+.body{
+    display: none;
+}
+ .two{
+    display:none;
+} 
+.results-list{
+    display: none;
+}
+    </style>
+</head>
+
+<body>
+        <nav class="mx-auto navbar  navbar-light bg-light bg-blue">
+           <div class="container">
+               <a href="http://127.0.0.1:5500/" class="brand-logo text-center">quizzzzzz...</a>
+           </div>
+              </nav>
+              <br>
+ <div class="container">
+      <div class="card one">
+          <div class="card-header">
+              <h3 class="card-text one text-center mb-3">
+                TO BEGIN, PICK A CATEGORY
+              </h3>
+            <div class="row">
+                <div class="col-3">
+                    <button  class="btn btn-outline-primary blue darken-3 football">Football</button>
+                </div>
+                <div class="col-3">
+                        <button  class="btn btn-outline-secondary nigeria">Nigeria</button>
+                </div>
+                <div class="col-3">
+                        <button  class="btn btn-outline-info javascript">Javascript</button>
+                </div>
+                <div class="col-3">
+                        <button  class="btn btn-outline-dark random">Random</button>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="card two">
+          <div class="card-header">
+              <div class="row">
+                <div class="col-4">
+                <div class="card-title">Take the quiz</div> 
+                <div class="card-subtitle mb-2 text-muted">click the button to start</div>
+                </div>
+                <div class="col-8 text-right" id="timer">
+                    <button class="btn btn-outline-secondary float-right" id="start" type="button">Start</button>
+                    
+                </div>
+            </div>
+          </div>
+          <div class="card-body body">
+            <h1 class="card-text">Here is your question</h1> 
+            <div id="img1"></div>
+            
+            <h3 id ="im" class="question text-center"></h3>
+            <div class="input-group mb-3 col-md-6">
+                <input type="text" class="form-control" id="input" placeholder="Answer" aria-label="Answer" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button id="submit" class="btn btn-outline-secondary" type="button">Submit</button>
+                </div>
+            </div>
+          
+            <div class="correct text-center "></div>
+             <button id="next" class="btn btn-outline-secondary float-right" type="button">NEXT</button>
+          </div>
+          <div class="table-responsive">
+            <table class="results-list table table-hover">
+                <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">Question</th>
+                      <th scope="col">Answer</th>
+                      <th scope="col">Mark</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+  
+                </tbody>
+            </table>
+          </div>
+          
+
+      </div>  
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="newApp.js"></script>
+</body>
+</html>
